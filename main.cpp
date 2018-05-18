@@ -1,3 +1,4 @@
+// РљРѕРїРёСЂРѕРІР°РЅРёРµ С‚РµРєСЃС‚РѕРІРѕРіРѕ С„Р°Р№Р»Р°
 #include <iostream>
 #include <fstream>
 
@@ -6,7 +7,7 @@ using namespace std;
 void filecopy (ifstream &in, ofstream &out)
 {
 	char ch;
-	while(in.get(ch))        // читать все символы, в том числе пробельные
+	while(in.get(ch))        // СЃС‡РёС‚С‹РІР°РЅРёРµ РІСЃРµС… СЃРёРјРІРѕР»РѕРІ, РІРєР»СЋС‡Р°СЏ РїСЂРѕР±РµР»С‹
     out.put(ch); 
 }
 
@@ -14,6 +15,6 @@ int main()
 {    
 	ifstream instrm ("txt.txt");
     ofstream outstrm("new txt.txt");
-    if (instrm) filecopy(instrm, outstrm);        // копирование файлов
+    if (instrm) filecopy(instrm, outstrm);        // РєРѕРїРёСЂРѕРІР°РЅРёРµ С„Р°Р№Р»Р°
  return 0;
 }
